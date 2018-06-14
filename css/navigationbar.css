@@ -1,0 +1,39 @@
+.navigator-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    height: 25px;
+}
+
+li.navigator-list-style {
+    float: left;
+}
+
+img {
+    width: 100%;
+}
+
+li a {
+    position: relative;
+    display: block;
+    padding: 2px 20px;
+    text-decoration: none;
+    color: #5F6164;
+    font-family: "Source Sans Pro";
+    font-size: 12.5px;
+    font-weight: 600;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+
+.rectangle {
+    position: absolute;
+    right: 4px;
+    top: 2px;
+    text-align: center;
+    width: 12px;
+    border-radius: 2px;
+    background-color: #C44D40;
+}

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html style="height:100%">
+
+<head>
+    <title>My Catalog</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="jquery-2.1.0.js"></script>
+
+
+    <style>
+        .top-container {
+            padding-left: 0px;
+        }
+
+        .menu-desktop {
+            display: none;
+        }
+
+        .menu-mobile {
+            display: block;
+        }
+
+
+        .user-icon {
+            width: auto;
+            height: 36px;
+        }
+
+        .user {
+            height: 24px;
+            width: auto;
+        }
+
+        .user-parent {
+            padding: 0px;
+            padding-top: 8px;
+        }
+
+        .buttonStyle-mobile {
+            cursor: pointer;
+            height: 30px;
+            width: 100%;
+            border: 0px;
+            border-radius: 2px;
+            background-color: #0073b1;
+            color: #fff;
+            /*font-family: "Source Sans Pro";*/
+            font-size: 12px;
+            /*line-height: 9px;*/
+            text-align: center;
+            text-decoration: none;
+            transition-timing-function: cubic-bezier(0, 0, .2, 1);
+            &:hover {
+                background-color: #006097;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            body {
+                font-size: 0.8rem;
+            }
+            .user {
+                height: 24px;
+                width: auto;
+            }
+            .user-parent {
+                padding: 0px;
+                padding-top: 8px;
+            }
+
+
+        }
+
+        @media screen and (max-width: 320px) {
+            .course_title {
+                font-size: 0.8rem;
+            }
+            .skilllabel,
+            .skills-general {
+                font-size: 0.7rem;
+            }
+
+            .user {
+                height: 24px;
+                width: auto;
+            }
+            .user-parent {
+                padding: 0px;
+                padding-top: 12px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .course_title {
+                font-size: 0.8rem;
+            }
+            .skilllabel,
+            .skills-general {
+                font-size: 0.7rem;
+            }
+
+            .user {
+                height: 24px;
+                width: auto;
+            }
+            .user-parent {
+                padding: 0px;
+                padding-top: 12px;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            .user {
+                height: 32px;
+                width: auto;
+            }
+            .user-parent {
+                padding: 0px;
+                padding-top: 12px;
+            }
+            .course_title {
+                font-size: 1.25rem;
+            }
+            .user-icon {
+                width: auto;
+                height: 40px;
+            }
+            .buttonStyle-mobile {
+                cursor: pointer;
+                height: 35px;
+                width: 60%;
+                border: 0px;
+                border-radius: 2px;
+                background-color: #0073b1;
+                color: #fff;
+                /*font-family: "Source Sans Pro";*/
+                font-size: 14px;
+                /*line-height: 9px;*/
+                text-align: center;
+                text-decoration: none;
+                transition-timing-function: cubic-bezier(0, 0, .2, 1);
+                &:hover {
+                    background-color: #006097;
+                }
+            }
+
+            .menu-desktop {
+                display: block;
+            }
+            .menu-mobile {
+                display: none;
+            }
+
+            .top-container {
+                padding-left: 15px;
+            }
+        }
+
+        }
+
+    </style>
+
+</head>
+
+<body style="height:100%">
+
+
+    <div class="container-fluid" style="background-color:#283e4a">
+        <div class="container top-container">
+
+
+            <div class="menu-mobile">
+                <div class="row" style="padding:0px">
+
+                    <div class="col-11 user-parent" style="padding-left:15px;text-align:left;">
+                        <img src="./images/adobe_sales_nav_logo.png" class="user" style="padding:0px"></img>
+                    </div>
+
+
+                    <div class="col-1" style="padding:0px;padding-top:10px;text-align:right;">
+                        <img src="./images/user3.png" class="user-icon"></img>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <table>
+
+                        <tr>
+                            <td><a class="nav-link" style="font-size:14px;color:#eeeeee;opacity:0.75" href="./login-page.html?redirect=home">Home</a></td>
+                            <td><a class="nav-link" style="font-size:14px;color:#eeeeee;opacity:0.75" href="./login-page.html?redirect=mylearning">My Learning </a></td>
+                            <td><a class="nav-link" style="font-size:14px;color:#ffffff;border-bottom: 2px solid;border-color:#ffffff" href="./login-page.html?redirect=myCatalog">Find Learning</a></td>
+
+                        </tr>
+
+                    </table>
+
+
+                </div>
+
+            </div>
+
+            <div class="menu-desktop">
+
+                <div class="row">
+                    <div class="col-4 user-parent" style="text-align:left;">
+                        <img src="./images/adobe_sales_nav_logo.png" class="user" style="padding:0px"></img>
+                    </div>
+
+                    <div class="col-7">
+                        <nav class="row navbar navbar-expand-lg navbar-dark" style="background-color:#283e4a">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                                </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" style="color:#eeeeee;opacity:0.75" href="./login-page.html?redirect=home">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" style="color:#eeeeee;opacity:0.75" href="./login-page.html?redirect=mylearning">My Learning </a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" style="color:#ffffff;border-bottom: 2px solid;border-color:#ffffff" href="./login-page.html?redirect=myCatalog">Find Learning</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+
+                    </div>
+
+                    <div class="col-1" style="padding:0px;padding-top:10px;text-align:right;">
+                        <img src="./images/user3.png" class="user-icon"></img>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="container" style="height:100%;background-color:#ffffff">
+
+        <div class="row justify-content-center" style="padding-top: 25px;background-color:#ffffff">
+            <h5 class="col-4" style="text-align:left" id="myCatalogLogo">Catalog</h5>
+            <div class="col-8" style="text-align: right">
+                <input class="form-control mr-sm-2" type="search" name="loSearchBar" id="loSearchBar" placeholder="Search here">
+            </div>
+        </div>
+        <div class="row justify-content-center" style="padding-left:15px;padding-right:15px">
+            <div class="col-12 dropdown-divider" style="border-top:1px solid #444444;opacity:0.2;padding:10px"></div>
+        </div>
+
+        <div id="loList" class="loList" style="background-color:#ffffff"></div>
+    </div>
+
+    <script type="text/javascript" src="my-catalog.js"></script>
+</body>
+
+</html>

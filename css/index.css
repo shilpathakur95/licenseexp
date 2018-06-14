@@ -1,0 +1,42 @@
+.catalogLink {
+    position: absolute;
+    left: 935px;
+    top: 645px;
+    height: 1.3%;
+    width: 8.0%;
+    color: #0B83BE;
+    font-family: "Source Sans Pro";
+    font-size: 14px;
+    line-height: 18px;
+}
+
+
+.thumb-container {
+    width: 19%;
+    margin-left: 74%;
+    margin-top: -75%;
+    color: #0B83BE;
+    font-family: "Source Sans Pro";
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.blockUI {
+    display: none;
+    background-color: grey;
+    opacity: 0.3;
+}
+
+div.opacity-provider {
+    display: none;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 400%;
+    /*these make the opacity provider fill the screen*/
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    position: absolute;
+    background: black;
+    z-index: 1;
+}

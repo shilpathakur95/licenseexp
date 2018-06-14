@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html style="height:100%">
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+
+    <style>
+        .user-icon {
+            width: auto;
+            height: 36px;
+        }
+
+        .top-container {
+            padding-left: 0px;
+        }
+
+        .menu-desktop {
+            display: none;
+        }
+
+        .menu-mobile {
+            display: block;
+        }
+
+        .logo-desktop {
+            display: none;
+        }
+
+        .logo-mobile {
+            display: block;
+        }
+
+        .home-banner-image {
+            height: 100px;
+            background-color: #444444;
+        }
+
+        .user {
+            height: 24px;
+            width: auto;
+        }
+
+        .user-parent {
+            padding: 0px;
+            padding-top: 15px;
+        }
+
+        .announcement-title {
+            font-size: 1rem
+        }
+
+        .announcement-subtitle {
+            font-size: 0.7rem
+        }
+
+        .announcement-img {
+            width: 200px;
+        }
+
+        .featured-content-label {
+            height: 40px;
+            padding-top: 20px;
+            padding-bottom: 30px;
+            font-size: 16px;
+        }
+
+        .featured-content-viewmore {
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .featured-content-desktop {
+            display: none;
+        }
+
+        .featured-content-mobile {
+            display: block;
+        }
+
+        .announcements-content-desktop {
+            display: block;
+            width: 100%;
+        }
+
+        .announcements-content-mobile {
+            display: block;
+        }
+
+        .featured-content-panel {
+            height: 300px;
+            background-color: #eeeeee;
+        }
+
+        .home-banner-image-new {
+            background: url('images/homePageBanner.png') left center no-repeat;
+            background-size: cover;
+            /*            height: 250px;*/
+            padding: 80px 0;
+        }
+
+        .home-banner-image-new .text {
+            width: 100%;
+            text-align: center;
+            font-size: 32px;
+            /*            font-weight: bold;*/
+            color: #FFF;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+            /*            outline: 1px solid red;*/
+            /*            margin: 0 auto;*/
+            /*            padding-top: 7%;*/
+            line-height: 1.2;
+        }
+
+        .home-banner-image-new .explore {
+            padding: 8px 20px;
+            font-size: 14px;
+            background: rgba(255, 255, 255, 0.8);
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 150px;
+            text-align: center;
+            border-radius: 3px;
+        }
+
+        .footer {
+            border-top: 1px solid #BBB;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        .footer p {
+            color: #888;
+            font-size: 14px;
+        }
+
+
+        @media screen and (max-width: 320px) {
+            .home-banner-image {
+                height: 100px;
+                background-color: #444444;
+            }
+            .user {
+                height: 24px;
+                width: auto;
+            }
+            .user-parent {
+                padding: 0px;
+                padding-top: 15px;
+            }
+            .announcement-title {
+                font-size: 1rem
+            }
+
+            .announcement-subtitle {
+                font-size: 0.7rem
+            }
+
+            .featured-content-label {
+                height: 40px;
+                padding-top: 20px;
+                padding-bottom: 30px;
+                font-size: 16px;
+            }
+            .featured-content-viewmore {
+                padding-top: 20px;
+                text-align: center;
+            }
+            .featured-content-desktop {
+                display: none;
+            }
+            .featured-content-mobile {
+                display: block;
+            }
+            .announcements-content-desktop {
+                display: block;
+            }
+            .announcements-content-mobile {
+                display: block;
+            }
+
+        }
+
+        @media screen and (max-width: 480px) {
+            .home-banner-image {
+                height: 100px;
+                background-color: #444444;
+            }
+            .user {
+                height: 24px;
+                width: auto;
+            }
+            .user-parent {
+                padding: 0px;
+                padding-top: 15px;
+            }
+            .announcement-title {
+                font-size: 1rem
+            }
+            .announcement-subtitle {
+                font-size: 0.7rem
+            }
+            .announcements-content-desktop {
+                display: block;
+            }
+            .featured-content-viewmore {
+                padding-top: 20px;
+                text-align: center;
+            }
+            .featured-content-label {
+                height: 40px;
+                padding-top: 20px;
+                padding-bottom: 30px;
+                font-size: 16px;
+            }
+
+            .featured-content-desktop {
+                display: none;
+            }
+            .featured-content-mobile {
+                display: block;
+            }
+            .announcements-content-mobile {
+                display: block;
+            }
+
+
+        }
+
+        @media only screen and (min-width: 768px) {
+            .home-banner-image {
+                height: 200px;
+                background-color: #444444;
+            }
+            .logo-desktop {
+                display: block;
+            }
+            .logo-mobile {
+                display: none;
+            }
+
+            .user {
+                height: 32px;
+                width: auto;
+            }
+            .user-parent {
+                padding: 0px;
+                padding-top: 12px;
+            }
+            .announcement-title {
+                font-size: 1.5rem
+            }
+            .announcement-subtitle {
+                font-size: 1rem
+            }
+
+            .announcement-img {
+                width: 400px;
+            }
+            .featured-content-viewmore {
+                padding-top: 40px;
+                text-align: center;
+            }
+            .featured-content-label {
+                height: 80px;
+                padding-top: 40px;
+                padding-bottom: 60px;
+                font-size: 20px;
+            }
+
+            .featured-content-desktop {
+                display: block;
+            }
+            .featured-content-mobile {
+                display: none;
+            }
+            .announcements-content-mobile {
+                display: none;
+            }
+
+            .featured-content-panel {
+                height: 500px;
+                background-color: #eeeeee;
+            }
+
+            .user-icon {
+                width: auto;
+                height: 40px;
+            }
+
+            .menu-desktop {
+                display: block;
+            }
+            .menu-mobile {
+                display: none;
+            }
+
+            .top-container {
+                padding-left: 15px;
+            }
+
+        }
+
+        }
+
+    </style>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="jquery-2.1.0.js"></script>
+
+
+</head>
+
+<body style="height:100%">
+
+    <div class="container-fluid" style="background-color:#283e4a">
+        <div class="container top-container">
+
+
+            <div class="menu-mobile">
+                <div class="row" style="padding:0px">
+
+                    <div class="col-11 user-parent" style="padding-left:15px;text-align:left;">
+                        <img src="./images/adobe_sales_nav_logo.png" class="user" style="padding:0px"></img>
+                    </div>
+
+
+                    <div class="col-1" style="padding:0px;padding-top:10px;text-align:right;">
+                        <img src="./images/user3.png" class="user-icon"></img>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <table>
+
+                        <tr>
+                            <td><a class="nav-link" style="font-size:14px;color:#ffffff;border-bottom: 2px solid;border-color:#ffffff" href="./login-page.html?redirect=home">Home</a></td>
+                            <td><a class="nav-link" style="font-size:14px;color:#eeeeee;opacity:0.75" href="./login-page.html?redirect=mylearning">My Learning </a></td>
+                            <td><a class="nav-link" style="font-size:14px;color:#eeeeee;opacity:0.75" href="./login-page.html?redirect=myCatalog">Find Learning</a></td>
+
+                        </tr>
+
+                    </table>
+
+
+                </div>
+
+            </div>
+
+            <div class="menu-desktop">
+
+                <div class="row">
+                    <div class="col-4 user-parent" style="text-align:left;">
+                        <img src="./images/adobe_sales_nav_logo.png" class="user" style="padding:0px"></img>
+                    </div>
+
+                    <div class="col-7">
+                        <nav class="row navbar navbar-expand-lg navbar-dark" style="background-color:#283e4a">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                                </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" style="color:#ffffff;border-bottom: 2px solid;border-color:#ffffff" href="./login-page.html?redirect=home">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" style="color:#eeeeee;opacity:0.75" href="./login-page.html?redirect=mylearning">My Learning </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" style="color:#eeeeee;opacity:0.75" href="./login-page.html?redirect=myCatalog">Find Learning</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+
+                    </div>
+
+                    <div class="col-1" style="padding:0px;padding-top:10px;text-align:right;">
+                        <img src="./images/user3.png" class="user-icon"></img>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="home-banner-image-new">
+        <div class="text">
+            Welcome to the new world of Learning</div>
+        <div class="explore">Explore</div>
+
+    </div>
+
+    <div class="container" style="height:100%;background-color:#eeeeee">
+
+
+
+        <table style="width:100%">
+
+            <tr>
+                <div class="row">
+                    <!--                    <div class="col-12 home-banner-image-new"></div>-->
+                </div>
+            </tr>
+            <tr class="featured-content-panel" style="background-color:#eeeeee">
+                <td style="background-color:#eeeeee;">
+                    <div class="row" style="background-color:#eeeeee">
+                        <div class="container-fluid">
+                            <div class="row justify-content-center" style="text-align:center;padding:20px">
+                                <div class="col-12 announcement-title">Featured Course</div>
+                            </div>
+
+                            <div class="row justify-content-center">
+
+                                <div class="col-12" id="id_featured-course_thumbnail" style="text-align:center;display:block">
+                                    <a id="course-thumbnail" href="#">  
+                                        <img class="card-img announcement-img"  src="./images/announcement_image.jpg" style="width:65%"> 
+                                    </a>
+                                </div>
+
+                                <div class="col-12 featured-course-iframe" id="id_featured-course_iframe_parent" style="text-align:center;display: none;">
+                                    <iframe webkitAllowFullScreen mozAllowFullScreen allowFullScreen id="id_featured-course_iframe"></iframe>
+                                </div>
+
+
+                            </div>
+
+                            <div class="row justify-content-center" style="background-color:#eeeeee">
+                                <div class="col-12 featured-content-viewmore">
+                                    <div id="id_featured_course_title" class="announcement-title"></div>
+
+                                </div>
+                            </div>
+                            <div class="row justify-content-center" style="background-color:#eeeeee">
+                                <div class="col-12 featured-content-viewmore">
+                                    <div class="btn btn-primary">View More</div>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-center" style="height:40px;background-color:#eeeeee">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </td>
+            </tr>
+            <tr class="featured-content-panel">
+                <td>
+                    <div class="row featured-content-panel" style="background-color:#cccccc">
+                        <div class="container">
+
+                            <div class="row" style="text-align:center">
+                                <div class="col-12 featured-content-label">Announcements</div>
+                            </div>
+
+                            <div class="row justify-content-center">
+                                <div class="col-8 announcements-content-desktop" style="text-align:center">
+                                    <img class="card-img announcement-img" src="./images/announcement_image.jpg">
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-center" style="background-color:#cccccc">
+                                <div class="col-12 featured-content-viewmore">
+                                    <div class="announcement-title">Watch: Joyce Duncan discusess the future of Learning and Sales</div>
+                                    <div class="announcement-subtitle">Joyce is the new lead on the learning initiative for the global sales operations.</div>
+
+                                </div>
+                            </div>
+                            <div class="row justify-content-center" style="background-color:#cccccc">
+                                <div class="col-12 featured-content-viewmore">
+                                    <div class="btn btn-primary">View More</div>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-center" style="height:40px;background-color:#cccccc">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+
+    <script type="text/javascript" src="index.js"></script>
+
+</body>
+
+</html>
